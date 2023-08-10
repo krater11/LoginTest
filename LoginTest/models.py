@@ -7,3 +7,7 @@ class UserInfo(models.Model):
     PhoneNumber = models.IntegerField(verbose_name="电话号码")
     CreateTime = models.DateTimeField(verbose_name="创建时间", auto_now_add=True)
     UserToken = models.CharField(verbose_name="Token", max_length=255, default="")
+
+
+class FileFolder(models.Model):
+    image = models.FileField(verbose_name="图片")
