@@ -3,6 +3,9 @@ from django.urls import path, include
 from LoginTest import views
 
 urlpatterns = [
-    path('Registration/', views.UserRegistrationView.as_view()),
-    path('Login/',views.UserLoginView.as_view()),
+    path('UserRegistration/', views.UserRegistrationView.as_view()),
+    path('UserLogin/',views.UserLoginView.as_view()),
+
+    path('regist/',views.regist.as_view()),
+    path('login/',views.login.as_view())
 ]
